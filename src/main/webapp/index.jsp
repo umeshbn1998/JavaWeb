@@ -1,33 +1,54 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Calculator</title>
-</head>
-<body>
-<h1 style="text_align=center">Calculator</h1>
-      <form action="firstHomePage" method="get">
-<label>first number:</label>
-<input type="text" name="n1" />
-<br />
-<label>Second number : </label>
-<input type="text" name="n2" />
-<br />
- <div>
-<label>
-<input type="radio" name="r1" value="add" />addition
-<br />
-</label>
-<label>
-<input type="radio" name="r2" value="sub" />subtraction 
-<br />
-</label>
-<label>
-<input type="radio" name="r3" value="prod" />product
-<br />
-</label>
-</div>
-<input type="submit" value="submit" />
-</form>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper navbar">      
+      <a href="OtherHtml/GDPR.html" target="_blank">Data Privacy</a>       
+    </div>
+
+    <div class="wrapper" id="calender">
+      <h1 id="ThemeTitle">Calender to show a month with its days.</h1>
+      <noscript>
+        <p id="noScriptText">Javascript needs to be activated</p>
+      </noscript>
+      <!-- Elements for adjusting the date of the month to be shown -->
+      <div id="Selector">
+        <select id="monthSelector">
+          <option value="0">Januar</option>
+          <option value="1">Februar</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">Dezember</option>
+        </select>
+        <p id="markerYear">Year :</p>
+        <input
+          id="yearInput"
+          type="text"
+          placeholder="Enter a year"
+          value="no year"
+          maxlength="4"
+        />
+        <button id="showButton" type="button" value="null">
+          Show current Month
+        </button>
+      </div>
+      <div id="dayList"></div>
+      <table id="calenderWeeks">
+
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
