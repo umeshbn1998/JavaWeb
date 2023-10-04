@@ -30,7 +30,7 @@
           <option value="8">September</option>
           <option value="9">October</option>
           <option value="10">November</option>
-          <option value="11">Dezember</option>
+          <option value="11">December</option>
         </select>
         <p id="markerYear">Year :</p>
         <input
