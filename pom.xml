@@ -9,7 +9,7 @@
   <artifactId>WebAppCal</artifactId>
   <packaging>war</packaging>
   <version>0.0.6</version>
-  <name>WebAppCal Maven Webapp</name>
+  <name>WebAppCal Maven Webapp name</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
